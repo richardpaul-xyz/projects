@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel='stylesheet' href="styles.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="container">
+            <input type="text" id="input" />
+            <label class="options">
+                <span>Password Length</span>
+                <input type="number" id='tot-number' min="4" max="20" />
+            </label>
+
+            <label class="options">
+                <span>Contains Uppercase</span>
+                <input type="checkbox" id='cont-uppercase' />
+            </label>
+
+            <label class="options">
+                <span>Contains Lowercase</span>
+                <input type="checkbox" id='cont-lowercase' />
+            </label>
+
+            <label class="options">
+                <span>Contains Numbers</span>
+                <input type="checkbox" id='cont-numbers' />
+            </label>
+
+            <label class="options">
+                <span>Contains Symbols</span>
+                <input type="checkbox" id='cont-symbols' />
+            </label>
+
+            <button id="generate">Generate</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
