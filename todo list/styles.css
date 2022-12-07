@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+}
+#container{
+    background-color: white;
+    min-height: 400px;
+    width:450px;
+    margin: 10% auto 3% auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(97, 97, 167);
+    
+}
+#text{
+    width:100%;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline:1px solid rgb(97, 97, 167);
+    overflow-wrap: break-word;
+    resize: none;
+
+
+}
+#btn{
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(46, 180, 19);
+    color:white;
+    box-shadow: 0 0 3px black;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left:10px;
+}
+
+/* Use this to make a ind of pop up button */
+#btn:active {
+    transform: scale(0.9);
+}
+
+
+#top{
+    display: flex;
+}
+
+#bottom{
+    margin-top:20px;    
+}
+#bottom p{
+    font-size: 20px;
+    margin:8px 0;
+    padding:5px;
+    width: 100%;
+    background-color: rgb(105, 91, 91);
+    color:white;
+    word-wrap: break-word;
+    border-radius:5px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right:30px;
+    text-align: justify; 
+
+    
+}
+#bottom p:hover{
+    background-color: rgba(105, 91, 91, 0.9);
+}
+/* #bottom p:active{
+    transform: scale(0.99);
+} */
+
+.cross:active{
+    transform: scale(0.9);
+}
+.cross{
+    position:absolute;
+    right: 10px;
+    top:8px;
+    color: rgb(223, 65, 65);
+}
+.cross:hover{
+    color: red;
+}
+.done{
+    text-decoration: line-through;
+    background-color: rgb(180, 174, 174) !important; /*its  working only if it has important thing*/
+    color:black !important;
+}
